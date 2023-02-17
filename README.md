@@ -69,3 +69,6 @@ Different graphs...
 
 `metrics.py`
 
+#### Visualized
+
+- Confusion Metrices 
