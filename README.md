@@ -3,6 +3,8 @@
 
 Clearly, there are many libraries fulfilling almost every all functionalities of data science techniques. However, for the purpose of experiment and clarity, a self made data science tool kit might be useful.
 
+**Remark**: This repo is also my experiment on working with *copilot*.
+
 ## Specifications
 
 The whole projects is write in `python`.
