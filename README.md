@@ -1,9 +1,12 @@
-# Data_Science_Tool_Kits
+# DSTK - Data Science Tool Kits
 **DS_Tool_Kit_Proposal**
 
 Clearly, there are many libraries fulfilling almost every all functionalities of data science techniques. However, for the purpose of experiment and clarity, a self made data science tool kit might be useful.
 
-**Remark**: This repo is also my experiment on working with *copilot*.
+**Remark**: 
+
+- This repo is also my experiment on working with *copilot*.
+- The repo still depends on many other packages: not all functions are from scratch.
 
 ## Specifications
 
