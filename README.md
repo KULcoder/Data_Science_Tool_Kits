@@ -84,5 +84,5 @@ This repo is organized through following parts
 
 #### Visualization
 
-- TODO: Confusion Matrix
+- Confusion Matrix
 - TODO: ROC
