@@ -1,79 +1,85 @@
 # DSTK - Data Science Tool Kits
-**DS_Tool_Kit_Proposal**
 
-Clearly, there are many libraries fulfilling almost every all functionalities of data science techniques. However, for the purpose of experiment and clarity, a self made data science tool kit might be useful.
+<br/>
 
-**Remark**: 
+This will be a **information & algorithm library**, and is only used to collect some information on the major methods used in data science, with the main purpose of **explain** and **understand** the concept. Industry solution might seek for other optimized solution.
 
-- This repo is also my experiment on working with *copilot*.
-- The repo still depends on many other packages: not all functions are from scratch.
+**Remark**:
+
+- This repo is not a integrated python library, which means you have to manfully find the specific method
+- This repo utilized *GitHub copilot*
+- This repo still depends on some other packages
+
+<br/>
 
 ## Specifications
 
 The whole projects is write in `python`.
 
-And all methods input & output types are designed based by `NumPy` and `Pandas`
+And all methods input & output type well be assumed to be `NumPy` or `Pandas` datatype
 
-Restrictions (Errors Raised if wrong case) are implemented
+Assertions (error cases) are not implemented.
 
-## Structure
+<br/>
 
-Center File `ds_kit.py` : link all other files.
+## Overall Structure
 
-Other functionalities are divided by parts of their purpose (also with a centered file):
+This repo is organized through following parts
 
 ### Obtaining Data
 
-`data.py`
+- useful data API, library, database
+- Parse methods
 
-- Useful data API, library, data base....
+### Visualization
 
-- Parse methods.
+- Graphing techniques by `pyplot` and `seaborn`
 
 ### EDA
 
-#### Visualization
+- Statistical analysis
 
-Different graphs...
-
-### Data Preprocesses
-
-`data_preprocess.py`
+### Data Preprocess 
 
 #### Transformation
 
-- one-hot-encoding
-- different types of standardization
-
-#### Correction
-
-- ML based missing data imputation
-
-#### Dataloader
-
-
+- one-hot encoding
+- standardization & normalization
+- special transformations for:
+  - Tabular data
+  - Image
+  - Text data
 
 ### Models
-
-`models.py`
 
 #### Linear Models
 
 
 
-#### Model Optimizer
-
-- Stochastic Gradient Descent
-- Adam
-
-#### Model Logger
+#### SVM
 
 
 
-### Evaluation 
+#### Tree Based
 
-`metrics.py`
 
-#### Visualized
 
-- Confusion Metrices 
+#### Neural Network
+
+
+
+#### Optimizer
+
+- Traditional Stochastic Gradient Descent
+- ADAM
+
+### Evaluation
+
+- loss, accuracy
+- recall, precision, F1
+- AUC 
+
+#### Visualization
+
+- Confusion Matrix
+- ROC
