@@ -2,7 +2,7 @@
 
 <br/>
 
-This will be a **information & algorithm library**, and is only used to collect some information on the major methods used in data science, with the main purpose of **explain** and **understand** the concept. Industry solution might seek for other optimized solution.
+This will be a **information & algorithm library**, and is only used to collect some information on the major methods used in data science, with the main purpose of **explain** and **understand** the concept **from scratch**. Industry usage might seek for other optimized solution. 
 
 **Remark**:
 
@@ -28,58 +28,61 @@ This repo is organized through following parts
 
 ### Obtaining Data
 
-- useful data API, library, database
-- Parse methods
+- TODO: useful data API, library, database
+- TODO: Parse methods
 
 ### Visualization
 
-- Graphing techniques by `pyplot` and `seaborn`
+- TODO: Graphing techniques by `pyplot` and `seaborn`
 
 ### EDA
 
-- Statistical analysis
+- TODO: Statistical analysis
 
 ### Data Preprocess 
 
 #### Transformation
 
-- one-hot encoding
-- standardization & normalization
+- TODO: one-hot encoding
+- TODO: standardization & normalization
 - special transformations for:
-  - Tabular data
-  - Image
-  - Text data
+  - TODO: Tabular data
+  - TODO: Image
+  - TODO: Text data
 
 ### Models
 
 #### Linear Models
 
-
+- TODO: Logistic Regression
 
 #### SVM
 
-
+- TODO: Linear SVM
 
 #### Tree Based
 
-
+- Decision Tree
+- Random Forest
+- TODO: AdaBoost
+- TODO: Gradient Boost
 
 #### Neural Network
 
-
+- TODO: Multi-Layer-Perceptrons
 
 #### Optimizer
 
-- Traditional Stochastic Gradient Descent
-- ADAM
+- TODO: Traditional Stochastic Gradient Descent
+- TODO: ADAM
 
 ### Evaluation
 
-- loss, accuracy
-- recall, precision, F1
-- AUC 
+- TODO: loss, accuracy
+- TODO: recall, precision, F1
+- TODO: AUC 
 
 #### Visualization
 
-- Confusion Matrix
-- ROC
+- TODO: Confusion Matrix
+- TODO: ROC
