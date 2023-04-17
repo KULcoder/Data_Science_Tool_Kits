@@ -9,3 +9,6 @@ Similar to how neural network is trained, some models can be trained with *gradi
 - Perform forward pass
 - calculate the *gradient* (can be different based on different optimization methods)
 - update the parameters
+
+
+
