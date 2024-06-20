@@ -2,23 +2,25 @@
 
 <br/>
 
-This will be a **information & algorithm library**, and is only used to collect some information on the major methods used in data science, with the main purpose of **explain** and **understand** the concept **from scratch**. Industry usage might seek for other optimized solution. 
+This will be a **information & algorithm library**, and is only used to collect some information on the major methods used in data science, with the main purpose of **explain** and **understand** the concept **from scratch**. Later development will allows the choice of more efficient library-based implementations. 
 
 **Remark**:
 
 - This repo is not a integrated python library, which means you have to manfully find the specific method
-- This repo utilized *GitHub copilot*
-- This repo still depends on some other packages
 
 <br/>
 
 ## Specifications
 
-The whole projects is write in `python`.
+The whole projects is write in `python` and `JAX`. The main purpose is to enable a whole efficient library-environment with `JAX`.  
 
-And all methods input & output type well be assumed to be `NumPy` or `Pandas` datatype
+Following packages are used:
+- `NumPy`
+- `Pandas`
+- `PyTorch`
+- `TensorFlow`
+- `JAX`
 
-Assertions (error cases) are not implemented.
 
 <br/>
 
