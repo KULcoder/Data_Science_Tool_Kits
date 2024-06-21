@@ -3,6 +3,8 @@ import numpy as np
 """
 This implementation doesn't take care of discrete or categorical features:
 It is considering every feature to be continuous.
+
+Pure python implementation by hand, not efficient.
 """
 
 class node:

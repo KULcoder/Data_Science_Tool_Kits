@@ -1,6 +1,8 @@
 """
 Random forest is a nice algorithm as its utilizaed both the complexity of decision tree methods 
 and the randomness to balance between bias and variance.
+
+Using sklearn style.
 """
 
 import numpy as np

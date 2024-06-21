@@ -4,45 +4,8 @@ Since JAX has autograd, we will not implement derivative.
 
 """
 
-import numpy as np
 import jax.numpy as jnp
 import jax
-
-# # Old numpy implementation
-# # Classification related loss classes
-# class Cross_entropy_loss:
-#     def __call__(self, y_pred, y):
-#         """
-#         Calculate the cross entropy loss.
-
-#         inputs:
-#             y_pred: numpy array of shape (n_samples, n_classes)
-#             y: numpy array of shape (n_samples)
-
-#         outputs:
-#             loss: float
-#         """
-#         n_samples = y.shape[0]
-#         y_pred = y_pred[np.arange(n_samples), y]
-#         loss = -np.mean(np.log(y_pred))
-#         return loss
-
-#     def gradient(self, y_pred, y):
-#         """
-#         Calculate the gradient of cross entropy loss.
-
-#         inputs:
-#             y_pred: numpy array of shape (n_samples, n_classes)
-#             y: numpy array of shape (n_samples)
-
-#         outputs:
-#             grad: numpy array of shape (n_samples, n_classes)
-#         """
-#         n_samples = y.shape[0]
-#         grad = y_pred.copy()
-#         grad[np.arange(n_samples), y] -= 1
-#         grad = grad / n_samples
-#         return grad
 
 def binary_cross_entropy_loss(predictions, labels):
     """
@@ -139,5 +102,40 @@ def mean_absolute_loss(predictions, targets):
 
     return mae_loss
 
+# # Old numpy implementation
+# # Classification related loss classes
+# import numpy as np
+# class Cross_entropy_loss:
+#     def __call__(self, y_pred, y):
+#         """
+#         Calculate the cross entropy loss.
 
+#         inputs:
+#             y_pred: numpy array of shape (n_samples, n_classes)
+#             y: numpy array of shape (n_samples)
+
+#         outputs:
+#             loss: float
+#         """
+#         n_samples = y.shape[0]
+#         y_pred = y_pred[np.arange(n_samples), y]
+#         loss = -np.mean(np.log(y_pred))
+#         return loss
+
+#     def gradient(self, y_pred, y):
+#         """
+#         Calculate the gradient of cross entropy loss.
+
+#         inputs:
+#             y_pred: numpy array of shape (n_samples, n_classes)
+#             y: numpy array of shape (n_samples)
+
+#         outputs:
+#             grad: numpy array of shape (n_samples, n_classes)
+#         """
+#         n_samples = y.shape[0]
+#         grad = y_pred.copy()
+#         grad[np.arange(n_samples), y] -= 1
+#         grad = grad / n_samples
+#         return grad
 
