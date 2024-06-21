@@ -5,6 +5,10 @@ This implementation doesn't take care of discrete or categorical features:
 It is considering every feature to be continuous.
 
 Pure python implementation by hand, not efficient.
+
+How to use:
+Create a decision tree object, fit and predict on data.
+
 """
 
 class node:
