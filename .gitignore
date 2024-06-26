@@ -1,3 +1,8 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
+
+# macOS temp files
+.DS_Store
+.AppleDouble
+.LSOverride
