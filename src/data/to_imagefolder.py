@@ -1,4 +1,6 @@
 """
+NOT TESTED
+
 The following code provides script to arrange MNIST and CIFAR10/100 dataset
 into standard imagefolder file structure. This script using tensorflow datasets
 and saving images into png files. Not very efficient.
