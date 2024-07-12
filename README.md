@@ -2,17 +2,18 @@
 
 <br/>
 
-This will be a **information & algorithm library**, and is only used to collect some information on the major methods used in data science, with the main purpose of **explain** and **understand** the concept **from scratch**. Later development will allows the choice of more efficient library-based implementations. 
+This will be a **information & algorithm library**, and is only used to collect some information on the major methods used in data science, with the main purpose of **explain** and **understand** the concept **from scratch**. 
 
 **Remark**:
 
-- This repo is not a integrated python library, which means you have to manfully find the specific method
+- This repo is for reference use.
 
 <br/>
 
 ## Specifications
 
-The whole projects is write in `python` and `JAX`. The main purpose is to enable a whole efficient library-environment with `JAX`.  
+The whole projects is writen with `pytorch`.  
+Some implementations with `JAX` is not tested.
 
 Following packages are used:
 - `NumPy`
