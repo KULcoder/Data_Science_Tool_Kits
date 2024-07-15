@@ -18,9 +18,9 @@ class Live_loss:
     Is designed to replace the epoch iterator.
     """
 
-    def __init__(self, total_epoch=100):
-        self.current_epoch = 0
-        self.step = 0
+    def __init__(self, total_epoch=100, display_interval=None):
+        self.current_epoch = 1
+        self.step = 1
         self.epochs = tqdm(range(total_epoch), desc=f"Epoch: {self.current_epoch}")
 
         self.live_losses = []
@@ -37,11 +37,18 @@ class Live_loss:
         if len(self.live_losses) > 100:
             self.live_losses.pop(0)
 
-        live_loss = np.round(np.mean(self.live_losses), 2)
-        live_acc = np.round(np.mean(self.live_accs), 2)
-        self.epochs.set_description(
-            f"Epoch: {self.current_epoch}, Step: {self.step}, loss: {live_loss:.2f}, acc: {live_acc}"
-        )
+
+
+        if display_interval:
+            if self.step % display_interval:
+                pass
+        else:
+            live_loss = np.round(np.mean(self.live_losses), 2)
+            live_acc = np.round(np.mean(self.live_accs), 2)
+            self.epochs.set_description(
+                f"Step: {self.step}, loss: {live_loss:.2f}, acc: {live_acc}"
+            )
+
 
     def finish_epoch(self):
         self.current_epoch += 1
