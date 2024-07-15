@@ -1,4 +1,6 @@
-
+"""
+designed for JAX sgd.
+"""
 
 def sgd(params, grads, learning_rate):
     if type(params) == list:

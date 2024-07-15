@@ -9,9 +9,9 @@ from jax import grad, random
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
 
-from models.layers.activations import relu
-from models.layers.normalizations.softmax import softmax
-from models.layers.linears import linear_layer
+from models.layers_jax.activations import relu
+from models.layers_jax.normalizations.softmax import softmax
+from models.layers_jax.linears import linear_layer
 from criterion.accuracy import compute_accuracy
 from optimizers.sgd import sgd
 from data.mnist_tensorflow import load_data

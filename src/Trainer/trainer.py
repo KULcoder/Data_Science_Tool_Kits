@@ -7,6 +7,7 @@ from src.metrics.visualization.live_plot import live_plot
 class Trainer:
     """
     Framework for gradient methods training process.
+    Plain python implementation.
     When use this method for complex model and early stop method, pay attention to the double descent problem.
     Early stop is implemented in the way that requires consistent worse performance in the validation loss to stop the training.
     """
