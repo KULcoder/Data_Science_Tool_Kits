@@ -1,4 +1,5 @@
 """
+NOT TESTED.
 Using JAX, implement the MLP with pytorch style.
 """
 import sys, os
