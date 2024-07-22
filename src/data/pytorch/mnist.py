@@ -4,6 +4,8 @@ Directly return PyTorch MNIST dataloader.
 
 from torchvision import transforms, datasets
 from torchvision.transforms import Compose
+from torch.utils.data import DataLoader, Dataset
+from torch import Tensor
 
 from typing import Tuple
 
