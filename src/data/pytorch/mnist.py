@@ -3,6 +3,8 @@ Directly return PyTorch MNIST dataloader.
 """
 
 from torchvision import transforms, datasets
+from torchvision.transforms import Compose
+
 from typing import Tuple
 
 def get_transforms() -> Tuple[Compose, Compose]:
