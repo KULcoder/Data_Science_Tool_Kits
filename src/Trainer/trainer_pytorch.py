@@ -116,8 +116,6 @@ class Trainer(object):
 
         return self.__train_losses[-1], self.__train_accs[-1]
 
-
-
     def __compute_loss_accuracy(self, logits, labels):
         loss = self.__criterion(logits, labels)
         pred = logits.argmax(dim=1, keepdim=True)

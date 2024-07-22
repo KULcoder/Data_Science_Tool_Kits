@@ -28,5 +28,30 @@ class MLP(nn.Module):
         return x
 
 if __name__ == '__main__':
-    pass
+    # prepare for the trainer
+
+    # args
+    trainer_args = {
+        "epochs": 20,
+        "display_interval": 10
+
+    }
+
+    # data
+    loaders = get_loaders()
+    # model
+    model = MLP()
+    # optimizer
+    optimizer = torch.optim.SGD(
+        filter(lambda p: p.requires_grad, model.parameters()),
+        lr = 5e-3
+    )
+    # criterion
+    criterion = torch.nn.CrossEntropyLoss()
+
+    # trainer
+    trainer = Trainer(trainer_args, model, optimizer, None, criterion, loaders)
+    best_val_acc, runtime = trainer.train()
+    print(best_val_acc, runtime)
+
     
