@@ -28,7 +28,7 @@ class Trainer(object):
             self.__train_loader, self.__validation_loader, self.__test_loader = loaders
 
         self.__total_epochs = args['epochs']
-        self.__live_loss = Live_loss(self.total_epochs, args['display_interval'])
+        self.__live_loss = Live_loss(self.__total_epochs, args['display_interval'])
 
         self.__device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
                 # move to the device
@@ -110,8 +110,8 @@ class Trainer(object):
             loss.backward()
             self.__optimizer.step()
 
-        self.__train_accs.append(train_correct * 100 / total_number_images)
-        self.__train_losses.append(train_loss.detach().cpu().item() / total_number_batches)
+        self.__train_accs.append(train_correct * 100 / len(self.__train_loader.dataset))
+        self.__train_losses.append(train_loss.detach().cpu().item() / len(self.__train_loader))
         self.__live_loss.finish_epoch()
 
         return self.__train_losses[-1], self.__train_accs[-1]

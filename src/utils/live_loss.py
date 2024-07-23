@@ -22,6 +22,7 @@ class Live_loss:
         self.current_epoch = 1
         self.step = 1
         self.epochs = tqdm(range(total_epoch), desc=f"Epoch: {self.current_epoch}")
+        self.display_interval = display_interval
 
         self.live_losses = []
         self.live_accs = []
@@ -38,10 +39,8 @@ class Live_loss:
             self.live_losses.pop(0)
 
 
-
-        if display_interval:
-            if self.step % display_interval:
-                pass
+        if self.display_interval and self.step % self.display_interval:
+            pass
         else:
             live_loss = np.round(np.mean(self.live_losses), 2)
             live_acc = np.round(np.mean(self.live_accs), 2)
