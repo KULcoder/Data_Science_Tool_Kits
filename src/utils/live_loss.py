@@ -1,5 +1,7 @@
 """
-Write a class: display dynamic train acc and loss on command line.
+A class: display dynamic train acc and loss on command line.
+Useful for training deep learning models, and give you a sense about your training
+while not using big monitor libs like tensorboard.
 
 Design: Should hold a tqdm object, and being able to update it.
 
