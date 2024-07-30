@@ -62,8 +62,6 @@ class Live_loss:
 
             self.epochs.set_description(description)
 
-
-
     def finish_epoch(self):
         self.current_epoch += 1
 
