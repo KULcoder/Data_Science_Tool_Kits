@@ -1,7 +1,11 @@
 # DSTK - Data Science Tool Kits
 
 This repo is only for quick reference on major data science methods. Find methods by the structure or direct search in this repo.  
-Try the best to find the most efficient and clean implementation!
+Try the best to find the most efficient and clean implementation!  
+
+<br/>
+
+Except functions with specific libs like `pandas`, `pytorch`, ..., the default data type in this repo is `numpy` array.
 
 ## Specifications
 
