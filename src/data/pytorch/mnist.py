@@ -23,7 +23,7 @@ def get_loaders(bz=256) -> Tuple[DataLoader, DataLoader]:
     train_transforms, test_transforms = get_transforms()
 
     train_set = datasets.MNIST(root = root, train=True, transform=train_transforms, download=True)
-    test_set = datasets.MNIST(root = root, train=False, transform=train_transforms, download=True)
+    test_set = datasets.MNIST(root = root, train=False, transform=test_transforms, download=True)
 
     train_loader = DataLoader(
         train_set,
