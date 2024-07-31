@@ -1,3 +1,7 @@
+"""
+For Binary Classification Predictions Only.
+"""
+
 import numpy as np
 from sklearn.metrics import roc_auc_score
 
